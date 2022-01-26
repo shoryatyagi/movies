@@ -1,0 +1,84 @@
+body{
+    background-color:  #111111;
+}
+
+.holder{
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111111;
+    border-radius: 20px;
+    box-shadow: 10px red 10px 50px #7158e2;
+    animation: shadow 10s linear infinite;
+    margin-top: 90px;
+
+}
+@keyframes shadow {
+    0%{
+        box-shadow: 10px 10px 50px #7158e2;
+        animation-delay: 1s;
+    }
+    25%{
+        box-shadow: 10px 10px 50px #17c0eb;
+        animation-delay: 3s;
+    }
+    50%{
+        box-shadow: 10px 10px 50px #32ff7e;
+        animation-delay: 5s;
+    }
+    100%{
+        box-shadow: 10px 10px 50px #7d5fff;
+        animation-delay: 8s;
+    }
+}
+.voice_activation{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(255, 165, 0);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-left: 190px;
+    margin-right: 40px;
+    margin-top: 75px;
+    animation: rang 3s linear infinite;
+    overflow: hidden;
+
+    
+}
+@keyframes rang{
+    0%{
+        background: linear-gradient(135deg, rgb(255, 165, 0) 60%, cyan);
+        
+    }
+   
+    100%{
+        background:linear-gradient(135deg, rgb(255, 165, 0) 60%, cyan);
+        transform: rotateX(360deg);
+        transform: rotateY(360deg);
+
+    }
+}
+.voice_activation:hover{
+    animation: icon 5s linear 1;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+@keyframes icon{
+    0%{
+        
+        border-radius: 20px;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+
+    }
+    33%{
+        clip-path: polygon(50% 0%, 100% 50%, 50% 18%, 0% 50%);
+        transform: rotateX(360deg);
+        transform: rotateY(360deg);
+    }
+    66%{
+        clip-path: polygon(50% 0%, 100% 50%, 50% 18%, 0% 50%);
+        transform: translateY(50px);
+        transform: rotateX(180deg);
+    }
+
+}
